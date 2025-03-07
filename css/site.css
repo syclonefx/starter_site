@@ -1,0 +1,78 @@
+@import "shared.css";
+@import "_reset.css";
+@import "layout.css";
+
+body {
+  background: white;
+  color: black;
+}
+
+header {
+  display: block;
+  height: 35px;
+  min-width: 100%;
+  background-color: var(--blue);
+  color: white;
+  padding-top: 5px;
+}
+
+header h1 {
+  font-size: 1.25em;
+  display: inline;
+  margin-left: 5px;
+}
+
+header #openbtn {
+  float: right;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 50px;
+  }
+}
+
+nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #f1f1f1;
+}
+
+nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  nav {padding-top: 15px;}
+  nav a {font-size: 18px;}
+}
