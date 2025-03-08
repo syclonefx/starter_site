@@ -1,37 +1,7 @@
 @import "shared.css";
 @import "_reset.css";
 @import "layout.css";
-
-body {
-  background: white;
-  color: black;
-}
-
-header {
-  display: block;
-  height: 35px;
-  min-width: 100%;
-  background-color: var(--blue);
-  color: white;
-  padding-top: 5px;
-}
-
-header h1 {
-  font-size: 1.25em;
-  display: inline;
-  margin-left: 5px;
-}
-
-header #openbtn {
-  float: right;
-  margin-right: 5px;
-}
-
-@media screen and (min-width: 768px) {
-  header {
-    height: 50px;
-  }
-}
+@import "base.css";
 
 nav {
   height: 100%;

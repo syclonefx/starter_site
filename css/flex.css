@@ -1,0 +1,44 @@
+@import "shared.css";
+@import "_reset.css";
+@import "base.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  /* flex-basis: 85%; */
+  margin: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  body { 
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10%;
+  }
+
+  nav div {
+    padding: 0px 0px 5px 5px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 85%;
+  }
+}
