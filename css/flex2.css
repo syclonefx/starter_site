@@ -1,0 +1,39 @@
+@import "shared.css";
+@import "_reset.css";
+@import "base.css";
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 5px; */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgb(243, 201, 201);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+nav {
+  flex: 1 1 30%;
+  margin: 5px;
+  max-width: 25ch;
+  min-width: 15ch;
+  background-color: var(--lt-gray);
+  border: 1px solid var(--drk-gray);
+}
+
+main {
+  color: white;
+  flex: 1 1 70%;
+  margin: 5px;
+  min-width: 44ch;
+  background-color: var(--lt-gray);
+  border: 1px solid var(--drk-gray);
+}
