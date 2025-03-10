@@ -34,6 +34,7 @@ main {
   flex: 1 1 70%;
   margin: 5px;
   min-width: 44ch;
+  max-width: 155chx;
   background-color: var(--lt-gray);
   border: 1px solid var(--drk-gray);
 }
